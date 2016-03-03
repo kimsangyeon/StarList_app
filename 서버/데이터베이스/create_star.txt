@@ -1,0 +1,17 @@
+set names utf8;
+
+create database if not exists stardb DEFAULT CHARACTER SET utf8 collate utf8_general_ci;
+
+use stardb;
+
+CREATE TABLE IF NOT EXISTS `star` (
+  `starid` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(32) NOT NULL,
+  `picture` varchar(60),
+  PRIMARY KEY (`starid`)
+) default character set utf8 collate utf8_general_ci;
+
+set names euckr;
+
+INSERT INTO star VALUES (null, "Çö¾Æ", "images/star1.jpg");
+INSERT INTO star VALUES (null, "À±Áø", "images/star2.jpg");
